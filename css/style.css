@@ -2,7 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
     /* ===========VARIABLE CSS ======== */
     :root{
-         ==header=height: 3 rem;
+         --header-height: 3 rem;
 
      /* ====COLORS=========*/
      /* DECIDE YOUR BROWSER THEME */
