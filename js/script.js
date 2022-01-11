@@ -64,12 +64,11 @@ console.log("Remove menu profile is working!")
 
 //===================================== Typewriter Effect =========================
 
-
 new Typewriter('#typewriter', {
-    strings: ['Nishan Subedi', 'Web-developer', 'Computer-Engineer', 'Learner', 'Analyst', ''],
-    autoStart: true,
-    loop: true,
-    cursor: "|"
-  });
-  console.log("Typewriter effect is working!")
+  strings: ['Nishan Subedi', 'Web-developer', 'Computer-Engineer', 'Learner', 'Analyst', ''],
+  autoStart: true,
+  loop: true,
+  cursor: "|"
+});
+console.log("Typewriter effect is working!")
   
