@@ -1,3 +1,4 @@
+/* strings: ['Nishan Subedi', 'Web-developer', 'Computer-Engineer', 'Learner', 'Analyst', ''], */
 //===================================== DARK THEME =========================
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -22,7 +23,7 @@ themeButton.addEventListener('click', () => {
     //ADD or remove the dark/light icon -- icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    //We save the theme and the current icon that the user has chosen(from local storage)
+    //We save the theme and the current icon that the user has chosen
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
@@ -49,6 +50,8 @@ if(navClose){
     })
 } 
 
+
+
 console.log("MENU Y SETTING WORKING!")
 //===================================== REMOVE MENU PRORFILE =========================
 const navLink = document.querySelectorAll('.nav__link')
@@ -62,7 +65,9 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 console.log("Remove menu profile is working!")
 
+
 //===================================== Typewriter Effect =========================
+
 
 new Typewriter('#typewriter', {
   strings: ['Nishan Subedi', 'Web-developer', 'Computer-Engineer', 'Learner', 'Analyst', ''],
@@ -94,6 +99,7 @@ var swiper = new Swiper(".blog-slider", {
   });
 console.log("Portfolio Swiper is working!")
 
+
 //===================================== SCROLL UP =========================
 function scrollUp(){
     const scrollup = document.getElementById('scroll-up');
@@ -107,7 +113,6 @@ function scrollUp(){
     console.log("Scroll up being called and working!")
 }
 window.addEventListener('scroll', scrollUp)
-
 
 //===================================== SCROLL SECTION ACTIVE HIGHLIGHT =========================
 
@@ -133,4 +138,3 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive)
 
-  
